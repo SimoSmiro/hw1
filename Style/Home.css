@@ -1,0 +1,282 @@
+body{
+  display: flex;
+  background-image: url(../Images/HomeBackground.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+  height: 95%;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid gray;
+}
+
+nav{
+  display: flex;
+  background-color: white;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#ChampSection{
+  display: flex;
+  height: fit-content;
+}
+
+#ChampSection div{
+  display: flex;
+  flex-direction: row;
+}
+
+#champForm{
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#results{
+  display: flex;
+  flex-direction: row;
+}
+
+#driver p, #points p{
+  margin: 0px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  line-height: 20px;
+  height: fit-content;
+  width: fit-content;
+  padding: 3px;
+  background-color: brown;
+  color: white
+}
+
+nav a, .Notizia .dx a{
+  text-decoration: none;
+  color: brown;
+  padding: 3px;
+  border: 2px solid brown;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.Notizia .dx a:hover{
+  color: white;
+  background-color: brown;
+  font-weight: bolder;
+}
+
+nav a:hover{
+  color: white;
+  background-color: brown;
+}
+
+#menu {
+  display: none;
+  cursor: pointer;
+  }
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: brown;
+  margin: 5px 0;
+  }
+
+#MobileMenu{
+  list-style: none;
+  display: none;
+  padding-left: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: rgb(83, 15, 15);
+  width: 100%;
+  height: fit-content;
+}
+
+.open #MobileMenu{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.open #MobileMenu li{
+  padding: 10px
+}
+
+#WelcomeBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#WelcomeBox #Title{
+  height: 50px;
+  text-align: center;
+}
+
+#contents{
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: center;
+  padding: 100px;
+}
+
+.Notizia{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.Notizia .dx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.Notizia .sx img{
+  border-radius: 10px;
+  max-width: 55%;
+}
+
+.Notizia .dx a{
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+}
+
+.Notizia .dx p{
+  font-size: larger;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.nascosto{
+  display: none;
+}
+  
+footer{
+  height: fit-content;
+  background-color: white;
+  color: black;
+  text-align:center
+
+}
+
+@media(max-width: 900px){
+
+  body{
+    font-size: medium;
+  }
+
+  main{
+    width: 70%;
+  }
+
+  nav .FullOnly{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    padding: 0px;
+    flex-direction: row-reverse;
+  }
+
+  #menu{
+    display: block;
+  }
+
+  #ChampSection div{
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  #ChampSection div #ChampForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #results{
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #ChampButton{
+    width: fit-content;
+  }
+
+  #contents{
+    padding: 0px;
+  }
+
+  .Notizia{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .Notizia .sx{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Notizia .dx{
+    display: flex;
+    width: 100%;
+  }
+
+  .Notizia .dx p{
+    font-size: medium;
+  }
+}
+
+@media(max-width: 500px){
+
+  body{
+    font-size: small;
+  }
+
+  #WelcomeBox{
+
+    width: 100%;
+  }
+
+  #welcomeBox img{
+    width: 60%;
+    height: 100%;
+  }
+
+  #WelcomeBox #Title{
+    width: 50%;
+    font-size: small;
+    text-align: center;
+  }
+
+  .Notizia .dx p{
+    font-size: small;
+  }
+}

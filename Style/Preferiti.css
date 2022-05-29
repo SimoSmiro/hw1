@@ -1,0 +1,151 @@
+body{
+  display: flex;
+  background-image: url(../Images/PreferitiBackground.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  height: 95%;
+  flex-direction: column;
+  margin: 0;
+}
+
+#preferitiList{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+  height: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.815);
+  border: 3px solid gray;
+}
+
+#StartBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1{
+  width: fit-content;
+}
+
+#StartBox a{
+  margin-left:20px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.Notizia{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.Notizia .sx img{
+  border-radius: 10px;
+  max-width: 55%;
+}
+
+.Notizia .dx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.Notizia .dx p{
+  font-size: larger;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Notizia .dx a, #StartBox a{
+  cursor: pointer;
+  text-decoration: none;
+  color: brown;
+  padding: 3px;
+  border: 2px solid brown;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+  width: fit-content;
+}
+
+.Notizia .dx a:hover, #StartBox a:hover{
+  color: white;
+  background-color: brown;
+  font-weight: bolder;
+}
+
+
+.nascosto{
+  display: none;
+}
+
+@media(max-width: 900px){
+
+  body{
+    font-size: medium !important;
+  }
+
+  h1{
+    font-size: large;
+  }
+
+  main{
+    width: 70%;
+  }
+
+  #contents{
+    padding: 0px;
+  }
+
+  .Notizia{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .Notizia .sx{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Notizia .dx{
+    display: flex;
+    width: 100%;
+  }
+
+  .Notizia .dx p{
+    font-size: medium;
+  }
+}
+
+@media(max-width: 500px){
+
+  body{
+    font-size: small !important;
+  }
+
+  h1{
+    font-size: medium;
+  }
+}
